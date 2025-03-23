@@ -1,0 +1,244 @@
+/* Global Styles */
+* {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Ensure consistent box sizing */
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #0B132B; /* Dark background color */
+    padding: 15px 20px; /* Added horizontal padding */
+    color: #6FFFE9; /* Change text color to light teal */
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center items */
+}
+
+/* Navigation Bar Brand */
+.navbar-brand {
+    color: #6FFFE9; /* Set color for brand text */
+    font-size: 2rem; /* Increase the size of the brand text */
+    flex-grow: 1; /* Allow the brand to take up space */
+}
+
+/* Ensure all text in navbar is light teal */
+.navbar, .navbar * {
+    color: #6FFFE9 !important; 
+}
+
+/* Adjust container to account for the fixed navbar */
+.container {
+    max-width: 800px; /* Max width of the container */
+    margin: 100px auto 0; /* Center container and add margin to prevent overlap with navbar */
+    padding: 40px 20px; /* Increase top padding to 40px */
+    background-color: #5BC0BE; /* Light teal background for the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Background for the whole page */
+.home-page {
+    background-color: #1C2541; /* Dark background for the page */
+    padding-bottom: 50px; /* Prevent overlap with fixed elements */
+}
+
+.header {
+    text-align: center; /* Center align the text */
+    margin: 40px 0; /* Optional: Adjust margin for spacing */
+}
+
+/* Grid Container for Boxes */
+.grid-container {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-gap: 20px; /* Gap between grid items */
+    padding: 20px; /* Padding around grid */
+}
+
+/* Section Boxes */
+.grid-container > div {
+    background-color: #3A506B; /* Dark teal background for each box */
+    border: 2px solid #5BC0BE; /* Light teal border for boxes */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding for content */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.grid-container > div:hover {
+    transform: translateY(-5px); /* Hover effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+/* Button Styles */
+button {
+    background-color: #5BC0BE; /* Button background color */
+    color: #0B132B; /* Button text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 0.9rem; /* Font size */
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 10px 0; /* Margin for spacing between buttons */
+}
+
+button:hover {
+    background-color: #6FFFE9; /* Lighter teal on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+button:focus {
+    outline: none; /* Remove outline */
+    box-shadow: 0 0 0 2px #5BC0BE66; /* Outline effect on focus */
+}
+
+/* Responsive Design: Stack the boxes vertically on small screens */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+}
+
+/* Current Account Address */
+span {
+    font-size: 16px; /* Font size for the address */
+    color: #5BC0BE; /* Teal color for the text */
+    display: inline-block; /* Aligns elements side by side */
+}
+
+/* Add margin to create space between spans */
+span:first-of-type {
+    margin-bottom: 10px; /* Adjust the value as needed for spacing */
+}
+
+/* Bold text style */
+span b {
+    font-weight: bold; /* Make the label bold */
+}
+
+/* HOME Button */
+.btn-outline-danger {
+    background-color: transparent; /* Transparent background */
+    border-color: #6FFFE9 !important; /* Lighter teal border color */
+    color: #6FFFE9; /* Lighter teal text color */
+    padding: 5px 10px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth transition */
+    margin: 10px;
+}
+
+/* Hover effect for the button */
+.btn-outline-danger:hover {
+    background-color: #5BC0BE !important; /* Darker teal background on hover */
+    color: white; /* White text on hover */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Current Account Address and Home Button Container */
+.current-account-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px; /* Add margin to create space between the address and the main container */
+    padding: 15px 20px;
+    background-color: #3A506B; /* Darker blue for the container */
+    border: 1px solid #1C2541; /* Dark border */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+/* Current Account Address */
+.current-account {
+    font-size: 18px;
+    color: #6FFFE9; /* Lighter teal color for the account */
+    font-weight: bold;
+    margin-right: 20px; /* Adds space between the account address and the home button */
+}
+
+/* Home Button Styling */
+.home-button {
+    background-color: #5BC0BE; /* Darker teal */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.home-button:hover {
+    background-color: #6FFFE9; /* Lighter teal on hover */
+    color: #0B132B; /* Darker text color on hover */
+}
+
+/* Loader */
+.wait {
+    font-size: 24px;
+    color: #EDEDED; /* Light text for loader */
+    text-align: center;
+    padding: 50px;
+}
+
+/* Form Styles */
+form {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #1C2541; /* Darker blue for form */
+    border-radius: 10px;
+}
+
+/* Input Styles */
+input.form-control-sm {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #6FFFE9; /* Lighter teal border */
+    border-radius: 5px;
+    background-color: #3A506B; /* Darker background for inputs */
+    color: #EDEDED; /* Light text color */
+}
+
+input.form-control-sm::placeholder {
+    color: #B0BEC5; /* Light placeholder color */
+}
+
+/* Button for Form Submission */
+button[type="submit"] {
+    background-color: #5BC0BE; /* Teal background */
+    color: #0B132B; /* Text color */
+    padding: 10px 15px; /* Padding for button */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #6FFFE9; /* Lighter teal on hover */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .navbar {
+        font-size: 1.2rem; /* Smaller font size for navbar */
+    }
+    
+    .container {
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+    
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+}

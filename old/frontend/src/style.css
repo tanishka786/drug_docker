@@ -1,0 +1,325 @@
+html,
+body {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    margin: 0;
+    height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+main {
+    margin-top: 80px;
+    padding: 2rem;
+}
+
+/* ------------------------------------------------------------ particles.js container ------------------------------------------------------*/
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #15136e;
+    background-image: url("https://img.freepik.com/free-vector/dark-blue-gradient-background_78370-2078.jpg?w=996&t=st=1723800412~exp=1723801012~hmac=6d2e25ecc5ce6d87d91757591ddc7a51a1751f58242cdae95e7cb5de80b2307b");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+/*------------------------------------------------------------  Navbar Style ---------------------------------------------------------------*/
+nav {
+    background: #062f3e;
+    height: 80px;
+    color: white;
+    overflow: hidden;
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.n1 {
+    font-size: 2rem;
+    line-height: 80px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a,
+a:visited {
+    color: #f9e4d4;
+}
+
+a.n,
+a:hover {
+    background: #1b6367;
+    transition: 0.5s;
+    color: #f9e4d4;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #f9e4d4;
+    float: right;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/*------------------------------------------------------------  Fontawasome Style ---------------------------------------------------------------*/
+
+@media (max-width: 1024px) {
+    .checkbtn {
+        display: block;
+    }
+}
+
+@media (max-width: 920px) {
+    .checkbtn {
+        display: block;
+    }
+
+    nav {
+        padding: 0 1.5rem;
+    }
+
+    label.n1 {
+        font-size: 1rem;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #1b6367;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover,
+    a.n {
+        background: none;
+        color: #f9e4d4;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ the styling of page ,about,career,book and contact starts here $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+.about {
+    align-content: center;
+    text-align: center;
+    font-size: 28px;
+    font-family: Georgia;
+    color: #470d21;
+    flex-wrap: wrap;
+}
+
+.career {
+    align-content: center;
+    text-align: center;
+    font-size: 25px;
+    font-family: Georgia;
+    color: #470d21;
+    flex-wrap: wrap;
+}
+
+.culinary {
+    margin: 30px 20px 0px 20px;
+    background: #9c0f48;
+    display: flex;
+    justify-content: space-between;
+    border: #d67d3e;
+}
+
+.culinary-text {
+    padding-left: 10px;
+    font-size: 30px;
+    font-family: Georgia;
+    color: #f9e4d4;
+    flex-wrap: wrap;
+}
+
+.Contact {
+    margin: 30px 20px 0px 20px;
+    background-color: #9c0f48;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.Contactext {
+    font-size: 20px;
+    font-family: Georgia;
+    color: #f9e4d4;
+    flex-wrap: wrap;
+}
+
+/*
+
+    .hero
+  {
+    text-align: center;
+    color: #1b6367;
+    background:#d67d3e;
+  }
+
+    .culinary {
+        flex-flow: column;
+    }
+
+    .culinary-text {
+        padding: 5rem;
+    }
+
+    .culinary iframe {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .Contact {
+        flex-flow: column;
+    }
+
+    .Contactext h1 {
+        font-size: 16px;
+    }
+
+    .Contactext h3 {
+        font-size: 9px;
+    }
+
+    .Contactext h4 {
+        font-size: 11px;
+    }
+
+    .Contact img {
+        margin-top: 2rem;
+        height: 200px;
+        width: 200px;
+    }
+
+   .hero-image {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background:#d67d3e;
+}
+
+.hero-image1 {
+    margin-top: 80px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("./assets/food-hero1.jpg");
+}
+
+.hero-image2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("./assets/food-hero2.jpg");
+}
+
+.hero-image3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("./assets/food-hero3.jpg");
+}
+
+.hero-image4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("./assets/food-hero4.jpg");
+}
+
+.hero-text {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-text button {
+    border: none;
+    margin-top: 2rem;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hero-text button:hover {
+    background-color: #555;
+    color: white;
+}
+
+    */
+
+
+    /* .meta-box{
+        margin-top: 250px;
+    } */
+
+    .meta-box {
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 250px;
+        width: 100%;
+        transition: background-color 0.3s;
+    }
+    
+    .meta-box:hover {
+        background-color: #0056b3;
+    }
+    
+    .wallet-status {
+        font-size: 18px;
+        color: #333;
+        margin: 15px 0;
+        word-wrap: break-word;
+    }
+    

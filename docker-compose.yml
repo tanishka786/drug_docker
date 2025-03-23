@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  ganache:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "7545:7545"
+    networks:
+      - blockchain-network
+    volumes:
+      - ./contracts:/app/contracts
+      - ./migrations:/app/migrations
+      - ./truffle-config.js:/app/truffle-config.js
+      - artifacts-volume:/app/client/src/artifacts
+    healthcheck:
+      test: ["CMD", "nc", "-z", "localhost", "7545"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: always
+
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_NETWORK_ID=5777
+      - REACT_APP_GANACHE_URL=http://localhost:7545
+      - WDS_SOCKET_HOST=127.0.0.1
+      - CHOKIDAR_USEPOLLING=true
+    volumes:
+      - ./client:/client
+      - artifacts-volume:/client/src/artifacts
+      - /client/node_modules
+    networks:
+      - blockchain-network
+    depends_on:
+      ganache:
+        condition: service_healthy
+
+networks:
+  blockchain-network:
+    driver: bridge
+
+volumes:
+  artifacts-volume:

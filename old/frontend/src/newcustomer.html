@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DrugGradian</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="/assets/logoDrug.png" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+            integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <script
+            src="https://kit.fontawesome.com/3f50e1da80.js"
+            crossorigin="anonymous"
+        ></script>
+
+       
+    </head>
+
+    <body class="bg">
+        <nav>
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <label class="n1"><a href="">Drug Gradian</a></label>
+            <ul>
+                <!-- <li><a class="n2" href="./index.html">Home</a></li> -->
+                <li><a href="#">Customer</a></li>
+                <!-- <li><a href="./manufacturer.html"></a></li> -->
+                <!-- <li><a href="./wholesale.html">Wholesale</a></li>
+                <li><a href="./retail.html">Retail</a></li>
+                <li><a href="./pharmacist.html">Pharmacist</a></li>
+                <li><a href="./customer.html">Customer</a></li> -->
+                <li><a href="#.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+      
+        <button id="connectMetamaskWallet" onclick="WallectConnect()" class="meta-box">Connect Metamask Wallet</button>
+        <br>
+        <p id="walletAddrText">Not Connected</p>
+        <br>
+        <button id="getAccountBalance" onclick="checkWalletBalance()">Get Balance of Wallet</button>
+        <br>
+        <p id="walletBalanceText"></p>
+        <!-- particles.js container -->
+        <div id="particles-js"></div>
+        <!-- particles.js lib (JavaScript CodePen settings): https://github.com/VincentGarreau/particles.js -->
+        <script src="./script.js"></script>
+    </body>
+</html>

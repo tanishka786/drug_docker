@@ -1,0 +1,287 @@
+% This is samplepaper.tex, a sample chapter demonstrating the
+% LLNCS macro package for Springer Computer Science proceedings;
+% Version 2.21 of 2022/01/12
+%
+\documentclass[runningheads]{llncs}
+%
+\usepackage[T1]{fontenc}
+% T1 fonts will be used to generate the final print and online PDFs,
+% so please use T1 fonts in your manuscript whenever possible.
+% Other font encondings may result in incorrect characters.
+%
+
+\usepackage{hyperref}
+\usepackage{graphicx}
+% Used for displaying a sample figure. If possible, figure files should
+% be included in EPS format.
+%
+% If you use the hyperref package, please uncomment the following two lines
+% to display URLs in blue roman font according to Springer's eBook style:
+%\usepackage{color}
+%\renewcommand\UrlFont{\color{blue}\rmfamily}
+%\urlstyle{rm}
+%
+\begin{document}
+%
+\title{Blockchain for Pharmaceutical Supply Chain Integrity: A Decentralized Approach to Combat Counterfeit Drugs}
+%
+%\titlerunning{Abbreviated paper title}
+% If the paper title is too long for the running head, you can set
+% an abbreviated paper title here
+%
+\author{
+Brinal Calaco\inst{1}\orcidID{0000-0003-2937-9790}\and 
+Tanishka Jayesh Das\inst{1}\orcidID{0000-1111-2222-3333} \and
+Pallavi Rajendra Dhandar\inst{1}\orcidID{1111-2222-3333-4444} \and
+Akash Rajapandian Nadar\inst{1}\orcidID{3333-4444-5555-6666} \and
+Jatush Vasantrai Hingu\inst{1}\orcidID{2222--3333-4444-5555}
+}
+%
+
+\institute{Vidyavardhini’s College of Engineering and Technology \and
+Vasai, India.\and
+\email{brinal.colaco@vcet.edu.in || tanishka.221513201@vcet.edu.in ||
+pallavi.221583202@vcet.edu.in || akash.222173101@vcet.edu.in || jatush.221723101@vcet.edu.in}\\
+\url{https://vcet.edu.in}}
+
+%
+\maketitle              % typeset the header of the contribution
+%
+\begin{abstract}This study presents a blockchain-based 
+solution for tracking the pharmaceutical drug supply chain, 
+aimed at enhancing transparency, security, and authenticity 
+from the production stage to the final sale. Utilizing Ganache 
+for blockchain simulation and MetaMask for account 
+management, we create a decentralized ledger that 
+immutably records each transaction in the drug's lifecycle. 
+From the sourcing of raw materials to manufacturing, 
+distribution, and retail, every stage is tracked, allowing 
+authorized participants to update and monitor the drug's 
+movement in real time. Smart contracts automate the 
+verification process, ensuring that predefined conditions are 
+met at each stage of the supply chain. This system not only 
+ensures the integrity of the supply chain but also provides a 
+reliable audit trail for regulatory authorities, reducing the 
+risk of counterfeit drugs. End users, such as consumers and 
+pharmacies, benefit from the ability to verify the authenticity 
+and safety of the drugs they purchase, contributing to a more 
+secure and trustworthy pharmaceutical ecosystem..
+
+\keywords{Blockchain, Pharmaceutical Supply Chain, Transparency, Security
+, Smart Contracts, Counterfeit Prevention.}
+\end{abstract}
+
+\section{INTRODUCTION}
+The pharmaceutical industry faces critical challenges in maintaining the integrity, safety, and authenticity of drugs throughout the supply chain. Counterfeit medications, mishandling, and lack of transparency can lead to compromised products, posing significant risks to patients’ health. Traditional supply chain systems struggle to provide the level of transparency and traceability needed to ensure drug safety from the point of manufacture to the end user [1]. This project proposes a blockchain-based solution to address these issues by creating a transparent, decentralized, and immutable ledger that tracks every transaction in the drug supply chain, ensuring data integrity and accountability at every stage [2].Our blockchain system begins tracking the drug from the raw material stage, through manufacturing, distribution, and retail, until the final sale, ensuring complete visibility . By using Ganache for blockchain simulation and MetaMask for account management, we simulate the creation of multiple accounts for stakeholders, allowing seamless transactions between them . Smart contracts play a critical role in this system, automatically verifying that each condition in the supply chain is met before progressing to the next stage, reducing human error and enforcing secure and timely transfers .This blockchain-based approach not only ensures greater transparency and traceability but also addresses regulatory compliance and provides an immutable audit trail for health authorities [3]. By securing the entire lifecycle of the drug, from raw materials to the final product on the shelf, it drastically reduces the risk of counterfeit drugs entering the supply chain . The system empowers stakeholders with real-time data and gives end consumers the ability to verify the authenticity and safety of the drugs they purchase, thus enhancing trust and security in the pharmaceutical industry . Ultimately, this solution fosters a safer, more reliable, and efficient pharmaceutical supply chain.
+
+
+\section{PROBLEM DEFINITION}
+
+Current pharmaceutical supply chain methods are fragmented and lack transparency, leading to inefficiencies, counterfeit risks, and regulatory challenges [4]. Outdated systems like paper-based documentation hinder real-time tracking and data visibility, making it harder to verify drug authenticity . This allows counterfeit drugs to enter the market, posing serious health risks and eroding consumer trust  Additionally, companies face regulatory pressure to meet requirements like DSCSA and FMD, but current systems struggle with transparency and compliance . A blockchain-based solution offers a secure, decentralized ledger, enabling real-time tracking, drug authenticity verification, streamlined compliance, and improved supply chain efficiency .
+
+\section{PROPOSED APPROACH}
+Embarking to Develop a Secure Access Mechanism: 
+Implement a verification system using college student IDs 
+to ensure that only authorized students from specific 
+campuses can access the application. This will enhance 
+security and prevent unauthorized access to sensitive data.
+
+\subsubsection{3.1 Implement a Secure Tracking System:}
+Develop a blockchain-based platform that securely records every transaction in the drug supply chain, ensuring stakeholders can verify the authenticity and journey of pharmaceuticals from production to sale. This will enhance trust and accountability in the system [4]. Blockchain technology maintains transparency by securely linking transactions to ensure product authenticity and prevent counterfeit drugs.
+
+\subsubsection{3.2 Testing Facilitate Real Time Updates:}
+ Enable stakeholders to update and track the status of drugs at each stage of the supply chain. Real-time tracking ensures immediate action on critical issues such as recalls or disruptions [5]. This transparency promotes accountability and trust among stakeholders in the pharmaceutical ecosystem .
+
+\section{METHODOLOGY}
+The methodology for developing the blockchain-based pharmaceutical supply chain solution encompasses several key phases: planning, design, implementation, testing, deployment, and future enhancements. Below is a detailed outline of the methodology:
+
+\subsubsection{4.1 Requirement Analysis:}
+A thorough analysis of the requirements should be conducted, focusing on the needs of key stakeholders such as manufacturers, distributors, retailers, and regulators. This includes understanding technical specifications and ensuring regulatory compliance [6]. The scope of the application should be clearly defined, with specific objectives outlined to guide the development process .
+
+.
+\subsubsection{4.2 Design Phase:}
+A high-level architecture and system design for the blockchain solution should be developed, outlining the overall structure, components, and interactions between stakeholders like manufacturers, distributors, retailers, and regulators. The design should include a user-friendly interface (UI) and user experience (UX) to ensure accessibility and visual appeal [7]. The blockchain architecture and smart contract specifications must be defined to enable secure tracking, efficient transaction management, and compliance with regulatory requirements.
+
+\subsubsection{4.3 Implementation:}
+The development of the blockchain platform should utilize appropriate programming languages and frameworks to ensure efficiency and scalability . User authentication and access control mechanisms must be implemented to restrict access to authorized stakeholders only . Features for tracking drug movements should be integrated, including real-time updates, alerts for recalls, and transaction management capabilities . Additionally, a knowledge base should be established to provide users with relevant information and address common queries effectively [8].
+
+\subsubsection{4.4 Testing:}
+Comprehensive testing should be conducted to ensure the functionality, usability, and security of the blockchain solution. This includes performing unit testing to validate individual components and smart contracts . Integration testing should be conducted to verify the seamless interaction between different features. User acceptance testing (UAT) must also be executed to gather feedback from real users and validate the solution’s effectiveness in meeting their needs [8].
+
+\subsubsection{4.5 Deployment:}
+The application should adhere to regulatory guidelines and requirements for pharmaceutical tracking systems . Once ready, it can be rolled out to stakeholders with proper support and training to ensure all users are comfortable and proficient with the new system .
+
+\subsubsection{4.6 Monitoring	and	Maintenance:}
+Monitor the performance and usage metrics of the blockchain solution post-deployment. Address issues or bugs identified by users through timely updates and maintenance releases. Collect feedback continuously to identify areas for improvement and ensure the system meets evolving needs [8]
+
+\subsubsection{4.7 Future Enhancements:}
+Explore the integration of advanced technologies, such as machine learning for predictive analytics in supply chain management, and investigate additional features like enhanced reporting tools and data analytics for stakeholders. Continuously evaluate emerging technologies and user needs to adapt and enhance the functionality and features of the blockchain solution over time. By following this methodology, the development team can ensure the successful implementation and continuous improvement of the blockchain-based pharmaceutical supply chain solution, thereby creating a reliable and efficient platform for tracking drugs throughout their journey from production to consumption.
+
+\section{RESULTS}
+The implementation architecture of the blockchain-based pharmaceutical supply chain solution comprises several components that work together to provide a secure, efficient, and user-friendly platform for tracking drugs. The architecture follows a modular design, facilitating scalability, maintainability, and future enhancements. Below is a block diagram illustrating the key components and their interactions, along with a flowchart demonstrating the application's workflow (As shown in figure 1).
+\begin{figure}
+\includegraphics[width=\textwidth]{assets/enhanced_supplier.png}
+\caption{Workflow of the site} \label{fig1}
+\end{figure}
+
+\subsubsection{5.1 Implement a Secure Tracking System:} Develop a blockchain-based platform that securely records every transaction in the drug supply chain, ensuring that stakeholders can verify the authenticity and journey of pharmaceuticals from production to sale. This will enhance trust and accountability in the system [8].
+
+\subsubsection{5.2 Blockchain Perform:} The core application where users (manufacturers, distributors, retailers, and regulators) interact with the pharmaceutical tracking system.
+
+\subsubsection{5.3 User Interface (UI):} Represents the graphical interface through which users navigate the application, view drug tracking information, initiate transactions, and access features like the knowledge base [8].
+
+\subsubsection{5.4 User Authentication:} Verifies user credentials, ensuring that only authorized stakeholders can access the system. This includes implementing secure login methods and access control.
+
+\subsubsection{5.5 Owner Module:} The Owner module in Drug Guardian is essential for managing drug ownership in the supply chain. It allows authorized entities like manufacturers and distributors to register, authenticate, and transfer drug ownership as products move through the chain  [9].
+
+\subsubsection{5.6 Distributor Module:} This module is specifically designed for wholesalers and distributors who manage drug logistics. It includes tools for order processing, shipment management, inventory tracking, and updating drug status as it moves along the supply chain  [9].
+
+\subsubsection{5.7 Retailer Module:} This module supports the management of drug inventory and transactions at the retail or pharmacy level. It tracks received drugs, helps verify authenticity, and manages the sale or dispensation of drugs to customers, ensuring safety and transparency [9].
+
+\subsubsection{5.8 Blockchain Database:} The blockchain securely stores drug movements, user profiles, and compliance records, ensuring data integrity and transparency across the supply chain[9].
+
+\subsubsection{5.9 Future Enhancements:} Represents potential future improvements to the application, such as integrating machine learning for predictive analytics in supply chain management and exploring additional features for reporting and data analytics  [10].
+
+
+Following is the flow chart which shows the Process design of out
+app:(As shown in figure 2)
+
+\begin{figure}
+\includegraphics[width=\textwidth]{assets/enhanced_final.png}
+\caption{Process Diagram of site} \label{fig 5.1}
+\end{figure}
+
+
+
+\subsubsection{5.9.1 User Enters the App:}
+- The user accesses the app's splash screen
+
+\subsubsection{5.9.2 Check for Existing Account:}
+- If the user already has an account, proceed with login process. 
+
+- If not, display the register user
+screen.
+
+\subsubsection{5.9.3 Login Process:}
+
+- User enters their username/email and password.
+
+- The system validates the credentials.
+
+- If valid, redirect to the home screen.
+
+- If not, display an error message.
+
+\subsubsection{5.9.4 Registration Process:}
+- User clicks on the registration.
+
+- User provides necessary information (e.g.,name, email, password).
+
+- The system validates the information.
+
+- If valid, create a new account and redirect to the home screen.
+
+- If not, display an error message.
+
+\subsubsection{5.9.5 Home Screen:}
+- After successfully logging in or registering, the user is redirected to the home screen.
+
+- The home screen displays various roles, allowing users to select their specific functions:
+• Raw Produce
+• Manufacturer
+• Distributor
+• Retailer
+• Logout Button
+
+\subsubsection{5.9.6 Tracking Section:}
+- In this section, the user can view a list of drugs along with their tracking information.
+
+- Users can select a specific drug to view its journey through the supply chain, including current status and location.
+
+\subsubsection{5.9.7 Logout: }
+- User can log out from their account by clicking the logout button. 
+
+- After logging out, they are redirected to the login or registration page.
+
+
+\begin{figure}
+\includegraphics[width=\textwidth]{assets/Fig 5.5.png}
+\caption{Ganache Account details page} \label{fig1}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=\textwidth]{assets/Fig 5.10.png}
+\caption{Metamask Account of actors} \label{fig1}
+\end{figure}
+
+\subsubsection{5.9.8 Explanation:}
+To set up the system, first connect Metamask to the Ganache blockchain by starting the workspace you created, and entering the Metamask password to initiate the connection. Ganache will then display 10 Ethereum accounts. In the settings, you can see the workspace details and confirm the connection with Truffle's configuration file, where the server connects to the specified host and port. Only the owner can perform registration by importing accounts from Ganache using private keys. The owner adds various actors like the raw material supplier, manufacturer, distributor, and retailer by registering their details, such as name, location, and Ethereum address.
+
+After registering the actors, the owner can add the medicine to be manufactured. Each actor performs their specific task using their respective accounts, such as the supplier providing raw materials by adding the medicine ID. Once all tasks are completed, the medicine can be tracked by entering its ID, allowing any actor to check its status as needed. This setup ensures clear roles and responsibilities among all involved parties while enabling efficient tracking of medicines.
+
+
+\section{FRONTIERS FOR FUTURE INNOVATION:}
+The Drug Guardian platform uses blockchain to secure, track, and improve the drug supply chain by providing real-time, transparent data to stakeholders like manufacturers, distributors, pharmacies, and patients. This reduces counterfeit risks and enhances trust by addressing traceability, compliance, and data integrity issues. Future efforts will focus on integrating seamlessly with healthcare systems like EHR and pharmacy management, ensuring efficient data flow and collaboration for improved patient safety and healthcare outcomes.
+
+% GitHub repository link
+For more details, visit the project repository at: \href{https://github.com/tanishka786/Drug_Blockchain.git}{GitHub Repository}.
+
+%
+% ---- Bibliography ----
+%
+% BibTeX users should specify bibliography style 'splncs04'.
+% References will then be sorted and formatted in the correct style.
+%
+% \bibliographystyle{splncs04}
+% \bibliography{mybibliography}
+%
+\begin{thebibliography}{8}
+\bibitem{ref_article1}
+Saberi, S., Kouhizadeh, M., Sarkis, J., and Shen, L.: Blockchain technology and its 
+relationships to sustainable supply chain management. International Journal of Production 
+Research \textbf{57}(7), 2117--2135 (2018). \url{https://doi.org/10.1080/00207543.2018.1533261}
+\bibitem{ref_article2}
+Roman-Belmonte, J. M., De la Corte-Rodriguez, H., and Rodriguez-Merchan, E. C.: 
+How blockchain technology can change medicine. Postgraduate Medicine 
+\textbf{130}(4), 420--427 (2018)
+\bibitem{ref_article3}
+Vruddhula, S.: Application of on-dose identification and blockchain to prevent drug counterfeiting. 
+Pathogens and Global Health \textbf{112}(4), 161--161 (2018)
+\bibitem{ref_article4}
+Ghadge, A., Bourlakis, M., Kamble, S., and Seuring, S.: Blockchain implementation 
+in pharmaceutical supply chains: A review and conceptual framework. 
+International Journal of Production Research \textbf{61}(19), 6633--6651 (2023)
+\bibitem{ref_article5}
+Rai, B. K.: BBTCD: blockchain-based traceability of counterfeited drugs. 
+Health Services and Outcomes Research Methodology \textbf{23}(3), 337--353 (2023)
+\bibitem{ref_article6}
+Kumar, M.: Blockchain Technology – A Algorithm for Drug Serialization. 
+Universal Journal of Pharmacy and Pharmacology, pp. 61--67 (2022)
+\bibitem{ref_article7}
+Roman-Belmonte, J. M., De la Corte-Rodriguez, H., and Rodriguez-Merchan, E. C.: 
+How blockchain technology can change medicine. Postgraduate Medicine 
+\textbf{130}(4), 420--427 (2018)
+\bibitem{ref_article8}
+Haq, I., and Muselemu, O.: Blockchain Technology in Pharmaceutical Industry to Prevent Counterfeit Drugs. 
+International Journal of Computer Applications \textbf{180}, 8--12 (2018), 
+doi:10.5120/ijca2018916579
+\bibitem{ref_article9}
+Panda, S. K., and Satapathy, S. C.: Drug traceability and transparency in medical 
+supply chain using blockchain for easing the process and creating trust between 
+stakeholders and consumers. Personal and Ubiquitous Computing, pp. 1--17 (2021)
+\bibitem{ref_article10}
+Mokrova, L. P., Borodina, M. A., Goncharov, V. V., Popov, S. A., and Kepa, Y. N.: 
+Prospects for using blockchain technology in healthcare: Supply chain management. 
+Entomology and Applied Science Letters \textbf{8}(2), 71--77 (2021)
+
+\bibitem{ref_proc1}
+X. Xu, N. Tian, H. Gao, H. Lei, Z. Liu, and Z. Liu: A Survey on Application of Blockchain Technology 
+in Drug Supply Chain Management. In: 2023 IEEE 8th International Conference on Big Data Analytics 
+(ICBDA), pp. 62--71. Harbin, China (2023), doi:10.1109/ICBDA57405.2023.10104779
+\bibitem{ref_proc2}
+Z. Zheng, S. Xie, H. Dai, X. Chen, and H. Wang: An Overview of Blockchain Technology: 
+Architecture, Consensus, and Future Trends. In: 2017 IEEE International Congress 
+on Big Data (BigData Congress), pp. 557--564. Honolulu, HI, USA (2017).
+
+\end{thebibliography}
+\end{document}

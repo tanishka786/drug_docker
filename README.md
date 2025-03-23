@@ -177,7 +177,7 @@
 
 ---
 
-### Notes
+### NOTE:
 - If you encounter issues with Docker, ensure it is running and properly configured.
 - Check the `.env` file for environment variable configurations if needed.
 - Make sure ports required by Docker and Ganache are not being used by other processes.
@@ -187,15 +187,3 @@
 
    - As an open source project feel free to fork, modify, and contribute to it 😎 .
 
-   
-### 15. **Setps to run the project**
- 
-   - Step1: Clone the project: https://github.com/tanishka786/Drug_Blockchain.git (use GitHub desktop which enables collaboration from the desktop, allowing users to create issues or pull requests to work with others on projects.)
-
-   - Step2: Watch the video tutorial : !!!!!!!!!BAKI CHE !!!!!!
-
-   - Step3: Enjoy!!!😎 your project is now fully set up and ready to use ✌🏻. 
-
-### 16. **Live Website:**
-
-   -  https://drugguardian.netlify.app
